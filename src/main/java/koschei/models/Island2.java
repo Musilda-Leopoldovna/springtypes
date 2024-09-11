@@ -1,11 +1,14 @@
 package koschei.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Island2 {
 
-    private final Wood3 wood;
+    private Wood3 wood;
 
-    public Island2(Wood3 wood) {
-        this.wood = wood;
+    @Autowired
+    public void setWood( Wood3 wood3) {
+        this.wood = wood3;
     }
 
     @Override

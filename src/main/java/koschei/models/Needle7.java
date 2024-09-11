@@ -1,14 +1,14 @@
 package koschei.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Needle7 {
 
-    private final Deth8 deth;
+    @Autowired
+    private Death8 death;
 
-    public Needle7(Deth8 deth) {
-        this.deth = deth;
-    }
     @Override
     public String toString() {
-        return "На конце иглы - смерть Кощея. " + deth.toString();
+        return "На конце иглы - смерть Кощея. " + death.toString();
     }
 }

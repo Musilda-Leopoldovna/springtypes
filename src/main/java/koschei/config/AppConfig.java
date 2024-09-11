@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     @Bean
-    public Island2 getIsland(Wood3 wood) {
-        return new Island2(wood);
+    public Island2 getIsland() {
+        return new Island2();
     }
 
     @Bean
@@ -20,7 +20,7 @@ public class AppConfig {
     }
 
     @Bean
-    public Needle7 getNeedle(Deth8 deth8) {
-        return new Needle7(deth8);
+    public Needle7 getNeedle() {
+        return new Needle7();
     }
 }
